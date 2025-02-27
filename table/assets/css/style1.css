@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/*common css*/
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+section {
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #2690c0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
+}
+
+.card-header h1 {
+    color: #fff;
+}
+
+.card-header button {
+    padding: 8px 16px;
+    color: #4c5c7b;
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.card-header button:first-child {
+    margin-right: 8px;
+}
+
+.card-header button:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.card-header button i {
+    margin-left: 4px;
+}
+
+.card-header button:active {
+    cursor: pointer;
+    background-color: #4c5c7b;
+}
+
+
+/*body*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.card-body img {
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.card-body span.status::before {
+    content: '\f111';
+    font-family: FontAwesome;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.card-body span.status.active::before {
+    color: green;
+}
+
+.card-body span.status.suspended::before {
+    color: red;
+}
+
+.card-body span.status.inactive::before {
+    color: #e2e208;
+}
+
+.card-body button {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+}
+
+.card-body button:hover {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+
+.card-body button:active {
+    background-color: #c4bbbb;
+    border-radius: 50%;
+}
+
+.card-body button:first-child {
+    color: #2690c0;
+}
+
+.card-body button:last-child {
+    color: red;
+}
+
+.card-body tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.card-footer button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card-footer button:hover {
+    background-color: #2690c0;
+    border: 1px solid #206c8f;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.card-footer button:first-child:hover,
+.card-footer button:last-child:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #117cce;
+}
