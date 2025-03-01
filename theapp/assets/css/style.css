@@ -1,3 +1,436 @@
-.landing img{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+.white {
+    background-color: white;
+    color: #333;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.teal {
+    background-color: #1abc9c;
+}
+
+.orange {
+    background-color: #e67e22;
+}
+
+.pink {
+    background-color: #e84393;
+}
+
+/* landing */
+.landing {
+    padding-top: 0 !important;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+}
+
+.app-promo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand-phone {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand-phone img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.app-prompt {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    z-index: 10;
+}
+
+.prompt-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.prompt-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.tour-btn button {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+
+/* whytobuy */
+.whytobuy {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.whytobuy .container {
+    display: flex;
+    align-items: left;
+    gap: 30px;
+}
+
+.app-info {
+    flex: 1;
+    text-align: left; 
+}
+
+.app-title {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.app-subtitle {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.app-description {
+    text-align: left;
+}
+
+.app-description h3 {
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.app-description p {
+    text-align: left;
+}
+
+.download-app-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 20px 0;
+}
+
+.platforms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.platform-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.app-preview {
+    flex: 1;
+    max-width: 300px;
+}
+
+.app-preview img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* clarity */
+.clarity {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.clarity .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.phone-image {
+    flex: 1;
+    text-align: center;
+}
+
+.phone-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clarity-info {
+    flex: 1;
+}
+
+.clarity-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle-red {
+    color: #ff5252;
+    margin-bottom: 20px;
+}
+
+/* features */
+.features {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
+/* price */
+.price {
+    background-color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.price h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.price > p {
+    margin-bottom: 40px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plan {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.plan-header {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 20px;
+}
+
+.premium-header {
+    background-color: #ff5252;
+}
+
+.plan-features {
+    padding: 20px;
+}
+
+.plan-features p {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-features span {
+    font-weight: bold;
+}
+
+.plan-price {
+    padding: 20px;
+}
+
+.plan-price h3 {
+    font-size: 2rem;
+}
+
+.plan-action {
+    padding: 0 0 20px;
+}
+
+.download-plan {
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+.footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.powered-by {
+    font-size: 0.9rem;
+}
+
+.powered-by a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .whytobuy .container,
+    .clarity .container {
+        flex-direction: column;
+    }
     
+    .app-prompt {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .prompt-box {
+        margin-left: 0;
+    }
+    
+    .tour-btn {
+        margin-right: 0;
+    }
+    
+    .pricing-plans {
+        flex-direction: column;
+    }
+    
+    .feature-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
