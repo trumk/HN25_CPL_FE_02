@@ -184,10 +184,8 @@ button {
     text-align: left;
 }
 
-.app-description h3 {
-    font-weight: normal;
-    margin-bottom: 15px;
-    text-align: left;
+.app-description span{
+    font-size: 22px;
 }
 
 .app-description p {
@@ -251,13 +249,14 @@ button {
 }
 
 .clarity-info h2 {
-    font-size: 2.2rem;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .subtitle-red {
     color: #ff5252;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 /* features */
@@ -320,8 +319,8 @@ button {
     margin-bottom: 10px;
 }
 
-.price > p {
-    margin-bottom: 40px;
+section.price > div > p{
+    padding-bottom: 50px;
 }
 
 .pricing-plans {
