@@ -1,0 +1,422 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    line-height: 1.6;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    margin-left: auto;
+    color: white;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    text-align: center;
+    height: 130px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.welcome-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.jane-world {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.subscribe-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* main cntent */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+.blog-post {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.blog-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.post-text {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.post-text span{
+    font-weight: bold;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-btn {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reply-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.reply-count {
+    background: white;
+    color: black;
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+
+/* comment */
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.comment img {
+    width: 70px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.comment-content h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.comment-content p {
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding-left: 40px;
+}
+.comment-date {
+    color: #999;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* sidebar */
+.sidebar-box {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.sidebar-box.author-box {
+    background-color: black;
+    color: white; 
+    text-align: left;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.sidebar-box.author-box .sidebar-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.sidebar-box.author-box .sidebar-content {
+    padding: 0;
+}
+
+.sidebar-box.author-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sidebar-box.author-box p {
+    padding: 0 15px 0 15px; 
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sidebar-header {
+    background-color: black;
+    color: white;
+    padding: 13px 14px; 
+    font-size: 13px;
+    font-weight: bold; 
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+.sidebar-content span:first-child {
+    color: white;
+    background-color: black;
+}
+
+.sidebar-content span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.author-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popular-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.popular-post img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.popular-post-info {
+    font-size: 12px;
+    color: #555;
+}
+
+.popular-post-info p {
+    font-size: 10px;
+    color: #999;
+}
+
+.ad-image {
+    width: 100%;  
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #f1f1f1;
+    padding: 3px 8px;
+    font-size: 12px;
+    color: #333;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.inspiration-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.social-icons-sidebar {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding: 5px 10px 5px 10px; 
+}
+
+.social-icons-sidebar a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+body > div.container > div.content-grid > div.sidebar > div:nth-child(6) > div.sidebar-content{
+    padding: 0;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.subscribe-form button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left; 
+    padding: 15px;
+    font-size: 10px;
+    padding-left: 20px; 
+}
+
+footer p{
+    padding: 10px 0;
+}
+
+.to-top-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 120px;
+}
+
+.to-top-btn:hover {
+    background-color: #555;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
