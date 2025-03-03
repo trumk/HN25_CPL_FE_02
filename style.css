@@ -419,3 +419,124 @@ footer p{
 .footer-link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+    .hero-content {
+        bottom: 200px;
+        left: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero-content {
+        bottom: 150px;
+        left: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+
+    .comment img {
+        width: 50px;
+        height: 60px;
+    }
+
+    .post-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .welcome-text {
+        font-size: 12px;
+    }
+
+    .hero-content {
+        bottom: 100px;
+        left: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .subscribe-btn {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+
+    .post-meta {
+        font-size: 10px;
+    }
+
+    .comment img {
+        width: 40px;
+        height: 50px;
+    }
+
+    .sidebar-header {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .tags {
+        justify-content: center;
+    }
+
+    .to-top-btn {
+        width: 100%;
+        padding: 8px;
+    }
+}
